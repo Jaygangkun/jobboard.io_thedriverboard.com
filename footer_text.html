@@ -157,67 +157,10 @@ $(".modal-content").css({"visibility":"visible"});
 				    $("#field_referring_domain").val(mixpanel.cookie.props["initial_referring_domain"]);
 				  }
 				});
-
-                // jQuery(".dropdown_advanced").each(function () {
-				//   jQuery(this).multiselect({
-				//     includeSelectAllOption: $(this).data('select-all') == 1,
-				//     enableFiltering: $(this).data('filterable') == 1 && $(this).find('option').length > 10,
-				//     enableCaseInsensitiveFiltering: $(this).data('filterable') == 1 && $(this).find('option').length > 10,
-				//     filterPlaceholder: $(this).data('search-text'),
-				//     nonSelectedText: $(this).data('placeholder'),
-				//     buttonClass: 'btn btn-utility btn-alt',
-				//     buttonWidth: '100%',
-				//     maxHeight: 200,
-				//     numberDisplayed: 1
-				//   });
-                // });
                 
                 jQuery('#applyModal').modal('toggle');
             }
         })
     })
 
-    // jQuery(document).on('click', '#apply-submit', function(){
-    //     // alert('submit');
-    //     alert('submit');return;
-    //     var email = jQuery('[name="applicant[email]"]').val();
-    //     var fname = jQuery('[name="applicant[fname]"]').val();
-    //     var lname = jQuery('[name="applicant[lname]"]').val();
-    //     var custom_phone = jQuery('[name="applicant[custom_field_answers][phone]"]').val();
-    //     var custom_city = jQuery('[name="applicant[custom_field_answers][city]"]').val();
-    //     var custom_state = jQuery('[name="applicant[custom_field_answers][state]"]').val();
-    //     var custom_zip = jQuery('[name="applicant[custom_field_answers][zip_code]"]').val();
-    //     var custom_are_you_23_years_of_age_or_older = jQuery('[name="applicant[custom_field_answers][are_you_23_years_of_age_or_older]"]').val();
-    //     var custom_do_you_have_a_cdl = jQuery('[name="applicant[custom_field_answers][do_you_have_a_cdl]"]').val();
-    //     var custom_previous_tractor_trailer_experience_if_required = jQuery('[name="applicant[custom_field_answers][previous_tractor_trailer_experience_if_required]"]').val();
-                
-    //     console.log('email:', email, 'fname:', fname, 'lname:', lname, 'custom_phone:', custom_phone, 'custom_city:', custom_city, 'custom_state:', custom_state, 'custom_zip:', custom_zip, 'custom_do_you_have_a_cdl:', custom_do_you_have_a_cdl, 'custom_previous_tractor_trailer_experience_if_required:', custom_previous_tractor_trailer_experience_if_required);
-
-    //     jQuery.ajax({
-    //         url: 'https://teenstreet.tdbapply.com/post.php',
-    //         type: 'POST',
-    //         data: {
-    //             email: email,
-    //             fname: fname,
-    //             lname: lname,
-    //             custom_phone: custom_phone,
-    //             custom_city: custom_city,
-    //             custom_state: custom_state,
-    //             custom_zip: custom_zip,
-    //             custom_are_you_23_years_of_age_or_older: custom_are_you_23_years_of_age_or_older,
-    //             custom_do_you_have_a_cdl: custom_do_you_have_a_cdl,
-    //             custom_previous_tractor_trailer_experience_if_required: custom_previous_tractor_trailer_experience_if_required
-    //         },
-    //         success: function(response){
-    //             response = jQuery.parseXML(response);
-    //             var status = jQuery(response).find('Status').text().toLowerCase();
-    //             if(status == 'accepted'){
-    //                 alert('success');
-    //             }
-    //             else{
-    //                 alert('fail');   
-    //             }
-    //         }
-    //     });
-    // })
 </script>
