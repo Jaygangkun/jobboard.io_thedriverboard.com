@@ -79,6 +79,10 @@ $(".modal-content").css({"visibility":"visible"});
                         company_id = 51445;
                     }
 
+                    if(company_link.indexOf('-amerifield') > 0){
+                        company_id = 165626;
+                    }
+
                     if(company_id != 0){
                         jQuery.ajax({
                             url: 'https://teenstreet.tdbapply.com/post.php',
