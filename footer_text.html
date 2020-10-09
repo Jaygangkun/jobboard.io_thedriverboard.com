@@ -50,11 +50,12 @@ $(".modal-content").css({"visibility":"visible"});
                     var custom_city = jQuery('[name="applicant[custom_field_answers][city]"]').val();
                     var custom_state = jQuery('[name="applicant[custom_field_answers][state]"]').val();
                     var custom_zip = jQuery('[name="applicant[custom_field_answers][zip_code]"]').val();
-                    var custom_are_you_23_years_of_age_or_older = jQuery('[name="applicant[custom_field_answers][are_you_23_years_of_age_or_older]"]').val();
+                    // var custom_are_you_23_years_of_age_or_older = jQuery('[name="applicant[custom_field_answers][are_you_23_years_of_age_or_older]"]').val();
+                    var custom_are_you_23_years_of_age_or_older = '';
                     var custom_do_you_have_a_cdl = jQuery('[name="applicant[custom_field_answers][do_you_have_a_cdl]"]').val();
                     var custom_previous_tractor_trailer_experience_if_required = jQuery('[name="applicant[custom_field_answers][previous_tractor_trailer_experience_if_required]"]').val();
                             
-                    if(email == '' || fname == '' || lname == '' || custom_phone == '' || custom_city == '' || custom_state == '' || custom_zip == '' || custom_are_you_23_years_of_age_or_older == '' || custom_do_you_have_a_cdl == '' || custom_previous_tractor_trailer_experience_if_required == '' || jQuery('#applicant_consents_attributes_0_consented').is(':checked') == false){
+                    if(email == '' || fname == '' || lname == '' || custom_phone == '' || custom_city == '' || custom_state == '' || custom_zip == '' || /*custom_are_you_23_years_of_age_or_older == '' ||*/ custom_do_you_have_a_cdl == '' || custom_previous_tractor_trailer_experience_if_required == '' || jQuery('#applicant_consents_attributes_0_consented').is(':checked') == false){
                         return;
                     }
 
